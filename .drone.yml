@@ -1,0 +1,24 @@
+image: node:4.0.0
+git:
+  path: github.com/npateriya/nodejs-babel
+script:
+  - echo "build commands"
+clone:
+  path: github.com/npateriya/nodejs-babel
+build:
+  image: node:4.0.0
+  commands:
+    - echo "build commands"
+
+publish:
+  docker:
+    dockerfile: ./Dockerfile
+    docker_host: 10.10.10.15:2375
+    docker_version: 1.4.1
+    registry_login: true
+    username: npateriyainsecure
+    password: githubpassword
+    email: npateriya@yahoo.com
+    image_name: npateriyainsecure/node-shipped-spark
+    push_latest: true
+    tag: 4.0.0
