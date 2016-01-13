@@ -20,4 +20,5 @@ publish:
     email: npateriya@yahoo.com
     image_name: npateriyainsecure/node-shipped-spark
     push_latest: true
+    repo: npateriyainsecure/node-shipped-spark
     tag: 4.0.0
