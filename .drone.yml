@@ -9,7 +9,6 @@ build:
   image: node:4.0.0
   commands:
     - echo "build commands"
-
 publish:
   docker:
     dockerfile: ./Dockerfile
